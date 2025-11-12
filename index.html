@@ -7,8 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculator</h1>
-    
+    <div class="calculator">
+        <div class="header">
+            <div class="window">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+            </div>
+            <div class="input">
+                1378 - 12 = <span>1336</span>
+            </div>
+        </div>
+        <div class="keys">
+            <div class="row">
+                <div class="number">
+                    <button class="button" onclick="addNumber(7)">7</button>
+                    <button class="button" onclick="addNumber(8)">8</button>
+                    <button class="button" onclick="addNumber(9)">9</button>
+                </div>
+                <div class="symbol">
+                    <button class="button" onclick="addSymble('/')">÷</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="number">
+                    <button class="button" onclick="addNumber(4)">4</button>
+                    <button class="button" onclick="addNumber(5)">5</button>
+                    <button class="button" onclick="addNumber(6)">6</button>
+                </div>
+                <div class="symbol">
+                    <button class="button" onclick="addSymble('-')">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="number">
+                    <button class="button" onclick="addNumber(1)">1</button>
+                    <button class="button" onclick="addNumber(2)">2</button>
+                    <button class="button" onclick="addNumber(3)">3</button>
+                </div>
+                <div class="symbol">
+                    <button class="button" onclick="addSymble('+')">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="number">
+                    <button class="dull button">AC</button>
+                    <button class="button">0</button>
+                    <button class="button">,</button>
+                </div>
+                <div class="symbol action">
+                    <button class="button" onclick="equal()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="credit">
+    Inspired from the design by <a href="https://dribbble.com/shots/3998247-Calculator" target="_blank">Dennis</a>
+    </p>
+        
 
 
 

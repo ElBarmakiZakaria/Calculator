@@ -1,6 +1,22 @@
-let operations = [3, "+", 4, "*", 2, "-", 1, "+", 5];
-const count = (operations.length-1)/2
-console.log(operations)
+let operations = [];
+let count = operations.length;
+
+function addNumber(nummber){
+    operations[count] = parseFloat(nummber);
+    count++;
+    console.log("numbers" ,operations)
+    console.log("count: ", count)
+    
+}
+
+
+function addSymble(symble){
+    operations[count] = symble;
+    count++;
+    console.log("numbers" ,operations)
+    console.log("count: ", count)
+}
+
 
 const add = function(firstNum, sencondNum){
     return firstNum + sencondNum;
@@ -49,16 +65,19 @@ function Calculate(){
 
     operations[0] = result;
     operations.splice(1,2)
+    count = operations.length
 
 
-    console.log("printing the log: ", operations)
 }
 
 
 
+function equal(){
+    for(let i = 0; i<count; i++){
+        console.log(i)
+        Calculate()
+    }
 
-for(let i = 0; i<count; i++){
-    console.log(i)
-    Calculate()
+    console.log(operations)
 }
 
